@@ -4,4 +4,4 @@ WORKDIR /app
 COPY . /app
 
 ENTRYPOINT [ "/bin/bash" ]
-CMD ["/app/start.sh"]
+CMD ["/bin/bash", "-c", "/app/start.sh"]
